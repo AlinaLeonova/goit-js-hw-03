@@ -14,7 +14,7 @@ user['full time'] = true;
 
 const keys = Object.keys(user);
 // console.log(Object.keys(user));
-const values = Object.values(user);
+// const values = Object.values(user);
 // console.log(Object.values(user));
 
 for (let key of keys) {
@@ -22,7 +22,7 @@ for (let key of keys) {
     // console.log('Key: ', user[key]);
 
     let value = user[key];
-    message = `${key}: ${value}\n`
+    message += `${key}: ${value}\n`
     console.log(message);
 }
 
