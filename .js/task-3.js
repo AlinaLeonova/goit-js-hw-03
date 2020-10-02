@@ -5,8 +5,6 @@ const findBestEmployee = function (employees) {
 
     for (let key in employees) {
         employees[key] > result ? ((result = employees[key]), (name = key)) : "";
-
-
     }
     return name
 
