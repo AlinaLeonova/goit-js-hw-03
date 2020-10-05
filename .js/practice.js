@@ -379,13 +379,18 @@
 
 
 
-// Напишите функцию которая принимает 3 параметра: название, цена, колбек 
-// Кобек создаёт объект с товаром и выводит его в консоль
 
+const global = function (a, b, callback) {
 
+    callback(a, b)
 
-const productOrder = function (name, n, callback) {
-       console.log(name, n, callback);
 }
 
-const p
+
+const callback = function (x, y) {
+
+    console.log(x * y)
+    { x, y }
+}
+
+global(5, 2, callback);
