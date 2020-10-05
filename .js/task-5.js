@@ -5,8 +5,6 @@ function getAllPropValues(array, prop) {
         if (prop in obj) result.push(obj[prop])
     }
 
-
-
     return result
 
 }
