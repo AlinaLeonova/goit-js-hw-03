@@ -243,92 +243,83 @@
 
 
 
-let car = {
+// let car = {
 
-    speed: 0,
-    color: 'silver black',
-    isEngineOn: false,
-    isLightOn: false,
+//     speed: 0,
+//     color: 'silver black',
+//     isEngineOn: false,
+//     isLightOn: false,
 
-    engineToggle() {
-        car.isEngineOn = !car.isEngineOn;
-        console.log(car.isEngineOn);
+//     engineToggle() {
+//         car.isEngineOn = !car.isEngineOn;
+//         console.log(car.isEngineOn);
 
-    },
-    speedOn(n) {
+//     },
+//     speedOn(n) {
 
-        if (car.isEngineOn) {
-            car.speed += n;
-            console.log(`Speed is increased up to ${n} . Current speed: ${car.speed}`);
-        } else {
-            console.log('you should turn your engine on');
-        }
+//         if (car.isEngineOn) {
+//             car.speed += n;
+//             console.log(`Speed is increased up to ${n} . Current speed: ${car.speed}`);
+//         } else {
+//             console.log('you should turn your engine on');
+//         }
 
-    },
+//     },
 
-    speedOff(n) {
+//     speedOff(n) {
 
-        if (car.isEngineOn) {
-            car.speed = car.speed - n;
-            console.log(`Speed is deacresed up to ${n} . Current speed: ${car.speed}`);
-        } else {
-            console.log('you should turn your engine on');
+//         if (car.isEngineOn) {
+//             car.speed = car.speed - n;
+//             console.log(`Speed is deacresed up to ${n} . Current speed: ${car.speed}`);
+//         } else {
+//             console.log('you should turn your engine on');
 
-        }
-    },
+//         }
+//     },
 
-    lightToggle() {
-        if (car.isEngineOn) {
-            console.log(!car.isLightOn);
+//     lightToggle() {
+//         if (car.isEngineOn) {
+//             console.log(!car.isLightOn);
 
-        } else {
-            console.log(car.isLightOn);
+//         } else {
+//             console.log(car.isLightOn);
 
-        }
-    },
-}
-
-
-car.engineToggle();
-car.engineToggle();
-car.engineToggle();
-car.engineToggle();
-car.speedOn(100);
-car.engineToggle();
-car.speedOn(100);
-car.engineToggle();
-car.speedOff();
-car.engineToggle();
-car.speedOff(35);
-car.engineToggle();
-car.speedOff(25);
-car.engineToggle();
-car.speedOff(10);
-car.engineToggle();
-car.speedOff(7);
-car.engineToggle();
-car.lightToggle();
-car.engineToggle();
-car.lightToggle();
+//         }
+//     },
+// }
 
 
-
-"Увольте" сотрудника если он неактивен И(!) его зп больше 100
-const workers = [
-    { name: 'Alex', salary: 100, isActive: true },
-    { name: 'Rita', salary: 80, isActive: false },
-    { name: 'John', salary: 100, isActive: true },
-    { name: 'Derek', salary: 200, isActive: false }
-]
+// car.engineToggle();
+// car.engineToggle();
+// car.engineToggle();
+// car.engineToggle();
+// car.speedOn(100);
+// car.engineToggle();
+// car.speedOn(100);
+// car.engineToggle();
+// car.speedOff();
+// car.engineToggle();
+// car.speedOff(35);
+// car.engineToggle();
+// car.speedOff(25);
+// car.engineToggle();
+// car.speedOff(10);
+// car.engineToggle();
+// car.speedOff(7);
+// car.engineToggle();
+// car.lightToggle();
+// car.engineToggle();
+// car.lightToggle();
 
 
 
-
-
-
-
-
-
+// "Увольте" сотрудника если он неактивен И(!) его зп больше 100
+// const workers = [
+//     { name: 'Alex', salary: 100, isActive: true },
+//     { name: 'Rita', salary: 80, isActive: false },
+//     { name: 'John', salary: 100, isActive: true },
+//     { name: 'Derek', salary: 200, isActive: false }
+// ]
 
 
 // car.speedOff();
@@ -349,3 +340,52 @@ const workers = [
 //     obj[key] > result ?  ? result = object[key] : "";
 // }
 
+
+
+
+// ? Module 4
+
+// const askName = function (msg) {
+//     let name = prompt("What's your name");
+
+//     console.log(msg + name);
+// }
+
+
+
+// const greeting = function (callback) {
+//     let msg = 'Hello my name is: ';
+
+//     callback(msg);
+// }
+
+// greeting(askName)
+
+
+
+// const calculator = function (num, callback) {
+//     return callback(num);
+// }
+// const plus = function (num) {
+//     return (Number(prompt('Enter your num: ')) + num)
+// }
+// const minus = function (num) {
+//     return (prompt('Enter your num: ') - num)
+// }
+// let resultPlus = calculator(10, plus);
+// console.log(resultPlus);
+// let resultMinus = calculator(10, minus);
+// console.log(resultMinus);
+
+
+
+// Напишите функцию которая принимает 3 параметра: название, цена, колбек 
+// Кобек создаёт объект с товаром и выводит его в консоль
+
+
+
+const productOrder = function (name, n, callback) {
+       console.log(name, n, callback);
+}
+
+const p
